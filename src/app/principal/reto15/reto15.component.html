@@ -1,0 +1,23 @@
+<section class="container mt-3 ">
+    <h1 class="text-center">Data Biding interpolacion</h1>
+    <section class="border border-secondary rounded-bottom">
+        <form class="form-group text-center">
+            <label for="">Event Biding</label>
+            <br>
+            <input class="btn btn-primary" type="button" value="Mostrar" (click)="Ocultar($event)">
+        </form>
+        <section *ngIf="ocultar" class="text-center">Event Biding, es el mecanismo  de data binfing mediante el cual trabaja  con los 
+            eventos que se muestran en el DOM.
+        </section>
+    </section>
+    <section class="container mt-3 border border-secondary">
+        <p>Two way Biding</p>
+
+        <p>{{twoway}}</p>
+
+        <textarea name="" id="" cols="100" rows="5"
+        [(ngModel)]="twoway"></textarea>
+    </section>
+
+
+</section>

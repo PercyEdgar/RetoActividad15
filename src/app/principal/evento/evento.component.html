@@ -1,0 +1,14 @@
+
+<!--Evento-->
+<h1>Binding por evento</h1>
+<h2>Binding desde evento click del button </h2>
+<input type="button" value="Incrementar" (click)="Incrementar()">
+<p>{{resultado}}</p>
+
+<h2>Binding mediante una expresion (sin métodos)</h2>
+<input type="button" value="Incrementar" (click)="numero  = numero + 1">
+<p>{{numero}}</p>
+
+<h2>Binding mediante objeto $Event</h2>
+<input type="text" (input)="Generar($event)">
+<p>{{mensaje | uppercase}}</p>
