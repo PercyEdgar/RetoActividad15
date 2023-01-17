@@ -12,6 +12,7 @@ nombre: string = '';
 apellido: string = '';
 carrera: string = '';
 id: number = 0;
+confirmacion:any;
 
 addData() {
 this.newData = {
@@ -28,6 +29,13 @@ console.log(this.data);
 }
 
 deleteData(id: number) {
-this.data = this.data.filter((item) => item.id !== id);
+  this.confirmacion = confirm("¿DESEA ELIMINAR?");
+  if(this.confirmacion == true){
+    this.data = this.data.filter((item) => item.id !== id);
+  }
+
 }
+
+  
+
 }
